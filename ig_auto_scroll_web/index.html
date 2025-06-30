@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Instagram Auto Scroller</title>
+  <style>
+    body { font-family: Arial; padding: 20px; text-align: center; }
+    .bookmarklet {
+      padding: 10px 20px;
+      font-size: 16px;
+      background: #0088ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    code {
+      background: #f4f4f4;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1>📜 Instagram Auto Scroller</h1>
+  <p>Drag the button below to your bookmarks bar, then open Instagram DMs and click it to start auto-scrolling upward:</p>
+  <a class="bookmarklet" href="javascript:(function(){window.autoScroll=setInterval(()=>{document.querySelector('[role=\'dialog\']')?.scrollBy(0,-200)},1000);})();">
+    🔄 Start IG Auto Scroll
+  </a>
+  <p><strong>To stop scrolling</strong>, open browser console and type:<br><code>clearInterval(window.autoScroll)</code></p>
+  <p>Made with ❤️ for Instagram Web users</p>
+</body>
+</html>
